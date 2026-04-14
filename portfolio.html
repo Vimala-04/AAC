@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, serif;
+            background: #f8f5f2;
+        }
+
+        
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        .left img {
+            width: 250px;
+            border-radius: 15px;
+        }
+
+        .right {
+            margin-left: 50px;
+        }
+
+        .right h1 {
+            font-size: 70px;
+            color: #4b2e2e;
+        }
+
+        .name {
+            background: #e8e2dc;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        
+        .about {
+            display: flex;
+            justify-content: space-between;
+            padding: 80px;
+            position: relative;
+        }
+
+        .about-left {
+            width: 50%;
+        }
+
+        .about-right img {
+            width: 250px;
+            border-radius: 15px;
+        }
+
+        .about::before {
+            content: "";
+            width: 200px;
+            height: 200px;
+            background: #e6b8b8;
+            border-radius: 50%;
+            position: absolute;
+            left: 40%;
+            top: 20%;
+            z-index: -1;
+        }
+
+        
+        .skills {
+            padding: 80px;
+            background: #f3ebe6;
+            position: relative;
+        }
+
+         .skills h2 {
+            font-size: 50px;
+            color: #4b2e2e;
+        }
+
+        .skill-box {
+            margin-bottom: 30px;
+        }
+
+       
+        
+        .contact {
+            display: flex;
+            justify-content: space-between;
+            padding: 80px;
+        }
+
+        .contact-left h2 {
+            font-size: 50px;
+            color: #4b2e2e;
+        }
+
+        .shape {
+            width: 200px;
+            height: 200px;
+            background: #d9a5a5;
+            border-radius: 50% 50% 0 50%;
+        }
+
+
+        @media (max-width: 768px) {
+
+            .hero, .about, .contact {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .right {
+                margin-left: 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+
+<nav>
+    <ul>
+        <li><a href="#">Intro</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="left">
+        <img src="https://imgcdn.stablediffusionweb.com/2025/1/23/d278677c-fe8f-49a6-afd9-d2d527d3e052.jpg" alt="profile">
+    </div>
+
+    <div class="right">
+        <h1>Portfolio</h1>
+        <p class="name">VIMALA TOLANUR</p>
+    </div>
+</section>
+
+
+<section class="about" id="about">
+    <div class="about-left">
+        <h2>About Me</h2>
+        <ul>
+            <li>Hi!</li>
+            <li><b>I am VIMALA</b> a computer science student</li>
+            <li>Pursuing BTech at Gokaraju Rangaraju Institute</li>
+            <li>Ambitious Computer Science student focused on data analytics and insights.</li>
+        </ul>
+    </div>
+
+    <div class="about-right">
+        <img src="https://thumbs.dreamstime.com/b/anime-girl-office-attire-finance-charts-background-291293555.jpg?w=992" alt="about">
+    </div>
+</section>
+
+
+<section class="skills" id="skills">
+    <h2>SKILLS</h2>
+
+    <div class="skill-box">
+        <h3>Data Analytics</h3>
+        <p>• Proficient in Python (Pandas, NumPy) and SQL.</p>
+    </div>
+
+    <div class="skill-box">
+        <h3>Programming & Databases</h3>
+        <p>• Strong foundation in DBMS and Data Structures.</p>
+    </div>
+</section>
+
+
+<section class="contact" id="contact">
+    <div class="contact-left">
+        <h2>Let's collaborate</h2>
+        <p>🌐 www.reallygreatsite.com</p>
+        <p>📧 vimala20007@outlook.com</p>
+        <p>📷 @reallygreatsite</p>
+        <p>📞 -----------</p>
+    </div>
+
+    <div class="contact-right">
+        <div class="shape"></div>
+    </div>
+</section>
+
+</body>
+</html>
